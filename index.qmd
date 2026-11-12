@@ -1,6 +1,6 @@
 # Introduction
 
-This book provides an example of how to apply the growth models to estimate fish growth potential from temperature time series data, as in Lundberg et al. (2026, *Fisheries*). We intend to apply this framework to a spatially explicit stream temperature predictions from a daily stream temperature model for the upper Snake River watershed, Wyoming, to understand how groundwater mediates the spatial distribution of growth potential under current and future climatic conditions.
+This book provides an example of how to estimate fish growth potential from temperature time series data using a bioenergetics model, as in Lundberg et al. (2026, *Fisheries*) and Armstrong et al. (2021, *Nature Climate Change*). We intend to apply this framework to spatially explicit stream temperature predictions from a daily stream temperature model for the upper Snake River watershed, Wyoming, to understand how groundwater mediates the spatial distribution of growth potential under current and future climatic conditions.
 
 Author: Jeff Baldock, <baldockj@oregonstate.edu>
 

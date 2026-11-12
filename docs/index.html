@@ -67,6 +67,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./BioenergeticsFunctions.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -345,6 +346,24 @@ octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BioenergeticsFunctions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bioenergetics model</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PreCalGrowth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pre-calculate growth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GrowthPotential.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Growth Potential</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -396,7 +415,7 @@ octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80
 
 <section id="introduction" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
-<p>This book provides an example of how to apply the growth models to estimate fish growth potential from temperature time series data, as in Lundberg et al.&nbsp;(2026, <em>Fisheries</em>). We intend to apply this framework to a spatially explicit stream temperature predictions from a daily stream temperature model for the upper Snake River watershed, Wyoming, to understand how groundwater mediates the spatial distribution of growth potential under current and future climatic conditions.</p>
+<p>This book provides an example of how to estimate fish growth potential from temperature time series data using a bioenergetics model, as in Lundberg et al.&nbsp;(2026, <em>Fisheries</em>) and Armstrong et al.&nbsp;(2021, <em>Nature Climate Change</em>). We intend to apply this framework to spatially explicit stream temperature predictions from a daily stream temperature model for the upper Snake River watershed, Wyoming, to understand how groundwater mediates the spatial distribution of growth potential under current and future climatic conditions.</p>
 <p>Author: Jeff Baldock, <a href="mailto:baldockj@oregonstate.edu" class="email">baldockj@oregonstate.edu</a></p>
 <p>Collaborators: Kevin Gauthier, Chuck Williams, Willie Fetzer, &amp; Annika Walters.</p>
 <hr>
@@ -907,10 +926,19 @@ loaded via a namespace (and not attached):
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./BioenergeticsFunctions.html" class="pagination-link" aria-label="Bioenergetics model">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bioenergetics model</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>This book provides an example of how to apply the growth models to estimate fish growth potential from temperature time series data, as in Lundberg et al. (2026, *Fisheries*). We intend to apply this framework to a spatially explicit stream temperature predictions from a daily stream temperature model for the upper Snake River watershed, Wyoming, to understand how groundwater mediates the spatial distribution of growth potential under current and future climatic conditions.</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>This book provides an example of how to estimate fish growth potential from temperature time series data using a bioenergetics model, as in Lundberg et al. (2026, *Fisheries*) and Armstrong et al. (2021, *Nature Climate Change*). We intend to apply this framework to spatially explicit stream temperature predictions from a daily stream temperature model for the upper Snake River watershed, Wyoming, to understand how groundwater mediates the spatial distribution of growth potential under current and future climatic conditions.</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Author: Jeff Baldock, <span class="ot">&lt;baldockj@oregonstate.edu&gt;</span></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>

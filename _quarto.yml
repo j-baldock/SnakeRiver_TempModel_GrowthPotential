@@ -18,6 +18,9 @@ book:
   date: today
   chapters:
     - index.qmd
+    - BioenergeticsFunctions.qmd
+    - PreCalGrowth.qmd
+    - GrowthPotential.qmd
 
 
 
