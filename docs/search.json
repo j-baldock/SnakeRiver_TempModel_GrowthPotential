@@ -1,0 +1,12 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Snake River Temperature Model and Growth Potential",
+    "section": "",
+    "text": "1 Introduction\nThis book provides an example of how to apply the growth models to estimate fish growth potential from temperature time series data, as in Lundberg et al. (2026, Fisheries). We intend to apply this framework to a spatially explicit stream temperature predictions from a daily stream temperature model for the upper Snake River watershed, Wyoming, to understand how groundwater mediates the spatial distribution of growth potential under current and future climatic conditions.\nAuthor: Jeff Baldock, baldockj@oregonstate.edu\nCollaborators: Kevin Gauthier, Chuck Williams, Willie Fetzer, & Annika Walters.\n\n\nSession Information\n\n\n\n\n\nCode\nsessionInfo()\n\n\nR version 4.5.2 (2025-10-31)\nPlatform: aarch64-apple-darwin20\nRunning under: macOS Tahoe 26.5.2\n\nMatrix products: default\nBLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib \nLAPACK: /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1\n\nlocale:\n[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n\ntime zone: America/New_York\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.5.2    fastmap_1.2.0     cli_3.6.5        \n [5] tools_4.5.2       htmltools_0.5.9   otel_0.2.0        rstudioapi_0.17.1\n [9] rmarkdown_2.30    knitr_1.51        jsonlite_2.0.0    xfun_0.60        \n[13] digest_0.6.39     rlang_1.1.7       evaluate_1.0.5",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  }
+]
