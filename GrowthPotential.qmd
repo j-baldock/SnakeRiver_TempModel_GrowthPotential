@@ -94,7 +94,7 @@ ggplot(habitat_df, aes(x = date, y = temp, color = habitat)) +
 
 ## Calculate growth potential
 
-Look up growth (g/g/day) for each daily temperature, at a fixed 10 g fish mass and a chosen proportion of maximum consumption (p-value).
+Look up growth (g/g/day) for each daily temperature, at a fixed 10 g fish mass and a chosen proportion of maximum consumption (p-value). Here, I assume the fish feeds at the maximum rate allowed by temperature-dependent physiology (p-value = 1), as in the prior studies. *Changing the p-value will affect the calculated growth rates, and it may be worth conducting a sensitivity analysis to understand the impact on the results qualitatively.* 
 ```{r}
 baseline_mass <- 10
 p_use <- 1.0   # p-value (proportion of Cmax); 1.0 = maximum ration

@@ -507,7 +507,7 @@ octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80
 </section>
 <section id="calculate-growth-potential" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="calculate-growth-potential"><span class="header-section-number">4.3</span> Calculate growth potential</h2>
-<p>Look up growth (g/g/day) for each daily temperature, at a fixed 10 g fish mass and a chosen proportion of maximum consumption (p-value).</p>
+<p>Look up growth (g/g/day) for each daily temperature, at a fixed 10 g fish mass and a chosen proportion of maximum consumption (p-value). Here, I assume the fish feeds at the maximum rate allowed by temperature-dependent physiology (p-value = 1), as in the prior studies. <em>Changing the p-value will affect the calculated growth rates, and it may be worth conducting a sensitivity analysis to understand the impact on the results qualitatively.</em></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1227,7 +1227,7 @@ octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80
 <span id="cb14-106"><a href="#cb14-106" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-107"><a href="#cb14-107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Calculate growth potential</span></span>
 <span id="cb14-108"><a href="#cb14-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-109"><a href="#cb14-109" aria-hidden="true" tabindex="-1"></a>Look up growth (g/g/day) for each daily temperature, at a fixed 10 g fish mass and a chosen proportion of maximum consumption (p-value).</span>
+<span id="cb14-109"><a href="#cb14-109" aria-hidden="true" tabindex="-1"></a>Look up growth (g/g/day) for each daily temperature, at a fixed 10 g fish mass and a chosen proportion of maximum consumption (p-value). Here, I assume the fish feeds at the maximum rate allowed by temperature-dependent physiology (p-value = 1), as in the prior studies. *Changing the p-value will affect the calculated growth rates, and it may be worth conducting a sensitivity analysis to understand the impact on the results qualitatively.* </span>
 <span id="cb14-112"><a href="#cb14-112" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb14-113"><a href="#cb14-113" aria-hidden="true" tabindex="-1"></a>baseline_mass <span class="ot">&lt;-</span> <span class="dv">10</span></span>
 <span id="cb14-114"><a href="#cb14-114" aria-hidden="true" tabindex="-1"></a>p_use <span class="ot">&lt;-</span> <span class="fl">1.0</span>   <span class="co"># p-value (proportion of Cmax); 1.0 = maximum ration</span></span>
