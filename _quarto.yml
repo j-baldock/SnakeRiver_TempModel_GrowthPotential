@@ -1,0 +1,48 @@
+project:
+  type: book
+  output-dir: docs
+  
+execute: 
+  warning: FALSE
+  message: FALSE
+  cache: true
+  freeze: auto
+
+comments:
+  hypothesis: 
+    theme: clean
+
+book:
+  title: "Snake River Temperature Model and Growth Potential"
+  author: "Jeff Baldock"
+  date: today
+  chapters:
+    - index.qmd
+
+
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: darkly
+    code-fold: true
+    code-tools: true
+    code-overflow: wrap
+    number-depth: 4
+    toc: true
+    toc-depth: 5
+        
+    include-in-header:
+      - file: github-corner.html
+    code-link: true
+      
+  pdf:
+    documentclass: scrreprt
+
+editor: source
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
